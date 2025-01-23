@@ -1,0 +1,30 @@
+.popular-word{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    border-bottom: 0.1rem solid var(--bg-color);
+    padding: 1rem 0rem;
+}
+.popular-word-content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.popular-word-name{
+    color: var(--dark-pink);
+    font-size: 1.7rem;
+    font-weight: bolder;
+}
+.popular-word-views{
+    margin-top: 0.2rem;
+    display: flex;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--header-footer-bg);
+}
+.popular-word-views i{
+    margin-top: 0.1rem;
+    font-size: 1.4rem;
+    margin-right: 0.9rem;
+    color: var(--header-footer-bg);
+}

@@ -1,0 +1,89 @@
+/* ----------------------------- Top Picks ------------------------------- */
+.top-picks-section {
+    margin-top: 3.5rem;
+    margin-bottom: 4rem;
+}
+
+.top-picks-section .heading {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    color: var(--dark-pink);
+}
+
+.top-picks-section p {
+    margin: 0rem 2rem;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.top-picks-section .control-btns,
+.top-picks-section .pagination-buttons {
+    width: fit-content;
+    display: block;
+    margin: auto;
+}
+.top-picks-section .pagination-buttons button{
+    font-size: 2rem;
+    color: var(--header-footer-bg);
+    padding: 0.6rem 1.5rem;
+    margin-left: 2rem;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+}
+.pagination-buttons button[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.box-container{
+    margin: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 2.5rem;
+}
+
+@media screen and (min-width:992px) {
+    .box-container{
+        margin-left: 0em;
+    }
+}
+.top-picks-section .control-btns button {
+    font-size: 1.5rem;
+    background: none;
+    color: black;
+    padding: 0.6rem 1.5rem;
+    border: 0.03rem solid var(--header-footer-bg);
+    border-radius: 1.3rem;
+    margin-left: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.control-btns button:hover,
+.control-btns button.active {
+    color: white;
+    background: var(--header-footer-bg);
+}
+
+@media screen and (min-width:992px) {
+    .top-picks-section p {
+        margin: 0rem 14rem;
+        margin-bottom: 2rem;
+    }
+}
+
+/* ----------------x------------ Top Picks ------------x------------------ */
+/* ------------------------- Grid Container Extra css --------------------- */
+@media screen and (min-width: 992px) {
+    .top-picks-song-grid {
+        margin: 2rem 14rem;
+    }
+}
+
+/* --------------x---------- Grid Container Extra css ---------x----------- */

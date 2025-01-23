@@ -1,0 +1,41 @@
+.new-member-info-item{
+    margin-top: 1rem;
+    display: flex;
+    gap: 1.75rem;
+    align-items: center;
+    color: black;
+    padding-bottom: 1rem;
+    position: relative;
+}
+.new-member-info-item:last-child{
+    padding-bottom: 0rem;
+    border-bottom: none;
+}
+.new-member-info-item .user-initials{
+    border-radius: 1.3rem;
+    color: white;
+    background: var(--dark-pink);
+    height: 4rem;
+    width: 4rem;
+    font-weight: bold;
+    padding: 1.1rem;
+    text-align: center;
+    background: var(--dark-pink);
+}
+.new-member-info-item .user-name{
+    font-weight: 600;
+    text-overflow: ellipsis;
+}
+.new-member-info-item .user-otherdetail{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    line-height: 1.25;
+    font-weight: 400;
+    color: gray;
+}
+.new-member-info-item .user-otherdetail .user-dateofjoin{
+    position: absolute;
+    right: 1rem;
+}

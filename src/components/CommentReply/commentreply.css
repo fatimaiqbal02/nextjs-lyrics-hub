@@ -1,0 +1,47 @@
+.comment-reply-section{
+    display: none;
+    width: 100%;
+}
+.comment-reply-section.active{
+    display: block;
+}
+
+form .box:focus {
+    border: 0.001rem solid var(--dark-pink) !important;
+}
+
+.comment-reply-section form .inputBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.comment-reply-section form .inputBox input,
+.comment-reply-section form textarea{
+    border-radius: 0.7rem;
+    width: 49%;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    font-size: 1.4rem;
+    color: #747470;
+    background: #f7f7f7;
+    text-transform: none;
+}
+
+.comment-reply-section form textarea {
+    height: 3.8rem;
+    resize: none;
+    width: 90%;
+}
+.comment-reply-area{
+    display: flex;
+}
+.comment-reply-area .btn {
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+    padding: 0.8rem 1rem;
+    border-radius: 1.3rem;
+    font-size: 1.4rem;
+    color: white !important;
+    background: var(--dark-pink);
+}

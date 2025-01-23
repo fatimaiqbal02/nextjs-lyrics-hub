@@ -1,0 +1,6 @@
+footer{
+    background: var(--header-footer-bg);
+    padding: 1.5rem 4rem;
+    font-size: 1.4rem;
+    color: white;
+}

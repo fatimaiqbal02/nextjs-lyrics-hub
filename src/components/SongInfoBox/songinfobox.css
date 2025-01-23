@@ -1,0 +1,59 @@
+.song-info-box{
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem;
+    flex: 1 1 25rem;
+    display: flex;
+    gap: 1.5rem;
+    margin-left: 1rem;
+}
+.other-details{
+    display: flex;
+    font-size: 1.3rem;
+}
+.views{
+    color: gray;
+    line-height: 1rem;
+    padding: 0.5rem 1rem;
+}
+.song-info-box .reviews{
+    line-height: 2rem;
+    color: #faca51;
+}
+.song-info-box .reviews i{
+    font-size: 1.3rem !important;
+    vertical-align: middle;
+}
+.song-info-box .popularity-index{
+    margin-left: -3rem;
+    background: var(--dark-pink);
+    border-radius: 1.3rem;
+    color: white;
+    font-weight: 600;
+    font-size: 1.4rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    padding: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+}
+.song-info-box .song-title{
+    font-weight: 600;
+    color: var(--header-footer-bg);
+    font-size: 1.5rem;
+    display: block;
+    white-space: pre;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 200px;
+}
+.song-info-box .song-artist{
+    color: gray;
+    font-size: 1.4rem;
+    line-height: 1.25;
+    display: block;
+    white-space: pre;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 200px;
+    font-weight: 400;
+}

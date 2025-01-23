@@ -1,0 +1,219 @@
+header{
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 10;
+    padding: 0.5rem 2rem;
+    background: var(--header-footer-bg);
+    color:white
+}
+header i{
+    display: block;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__title{
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+}
+#search-btn{
+    color: var(--purple);
+    cursor: pointer;
+    font-size: 2rem;
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+}
+#search-btn:hover{
+    color: var(--light-black);
+}
+.nav__search-form{
+    margin: 0.5rem 0rem;
+    width: 20rem;
+    height: 3.6rem;
+    background: white;
+    border-radius: 0.3rem;
+    border: 0.1rem solid var(--purple);
+}
+.searchbar{
+    display: flex;
+    align-items: center;
+}
+.nav__search-form input{
+    height: 100%;
+    width: 100%;
+    font-size: 1.4rem;
+    color: black;
+    padding: 1rem;
+}
+.nav__search-form label{
+    cursor: pointer;
+    font-size: 2.2rem;
+    margin: 0rem 1.5rem;
+    color: var(--header-footer-bg);
+}
+.nav__searchArea{
+    color: #333;
+    margin: 1rem 0rem;
+    width: 20rem;
+    padding: 1rem 1rem;
+    height: fit-content;
+    background: white;
+    border-radius: 0.3rem;
+    border: 0.1rem solid var(--purple);
+    font-size: 1.3rem;
+    font-weight: 400;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+.song-search-result{
+    color: #333;
+    display: block;
+    padding: 1rem;
+    border-bottom: 0.1rem solid var(--bg-color);
+}
+.song-search-result:first-child{
+    padding-top: 0rem;
+}
+.song-search-result:last-child{
+    padding-bottom: 0rem;
+    border-bottom: none;
+}
+.song-search-result .song-name{
+    font-size: 1.4rem;
+    color: var(--header-footer-bg) !important;
+    font-weight: 500;
+    display: block;
+    white-space: pre;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.nav__left-btns{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+.nav__left-btns a{
+    display: flex;
+    gap:0.5rem;
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 700;
+    width: max-content;
+    position: relative;
+}
+.nav__left-btns a .title{
+    position: absolute;
+    top: 3rem;
+    left: -2rem;
+    display: block;
+    width: max-content;
+    background: white;
+    color: var(--header-footer-bg);
+    box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.3rem;
+    padding: 0.5rem 1rem;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.nav__left-btns a:hover .title {
+    visibility: visible;
+    opacity: 1;
+}
+
+.nav__left-btns  a i{
+    font-size: 1.7rem;
+}
+.nav__left-btns span{
+    display: none;
+}
+
+.tooltip-container {
+    position: relative;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+.tooltip-icon{
+    position: relative;
+    font-size: 2rem;
+}
+.tooltip-title {
+    position: absolute;
+    top: 30px;
+    right: 3px;
+    display: block;
+    width: max-content;
+    background: white;
+    color: var(--header-footer-bg);
+    box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.3rem;
+    padding: 0.5rem 1rem;
+    visibility: hidden;
+    opacity: 0;
+}
+.tooltip-icon:hover + .tooltip-title {
+    visibility: visible;
+    opacity: 1;
+}
+
+.optbtn{
+    padding: 0.5rem 0.5rem;
+    color:  var(--header-footer-bg);
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+.user-icon-options a{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.user-icon-options a:hover{
+    cursor: pointer;
+    background: var(--header-footer-bg);
+    color: white;
+}
+
+.user-icon-options{
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 8vh; 
+    right: -100rem;
+    width: 16rem;
+    background: white;
+    z-index: 8
+}
+.user-icon-options.active{
+    right: 1.5rem;
+}
+
+@media only screen and (min-width:450px){
+    .header{
+        padding: 0.5rem 2rem;
+    }
+    .nav__search-form{
+        width: 30rem;
+    }
+    .nav__searchArea{
+        width: 30rem;
+    }
+}
+@media screen and (min-width: 652px) {
+    .nav__left-btns span{
+        display: block;
+    }
+    .nav__left-btns a:hover .title {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+@media  screen and (min-width:992px) {
+    .header{
+        padding: 0.5rem 4rem;
+    }
+}

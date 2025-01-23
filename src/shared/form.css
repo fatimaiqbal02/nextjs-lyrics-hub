@@ -1,0 +1,83 @@
+body {
+    background: white;
+}
+.form-section {
+    margin-top: 5rem;
+    padding: 3.5rem 9%;
+    min-height: 85vh;
+}
+.form-section .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+.form-section .row .image {
+    flex: 1 1 35rem;
+}
+.form-section .row .image img {
+    width: 100%;
+    height: 100%;
+}
+.form-section .row form {
+    flex: 1 1 50rem;
+    padding: 2rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+}
+.form-section .row form p {
+    font-size: 1.4rem;
+}
+form .box:focus {
+    border: 0.001rem solid var(--dark-pink) !important;
+}
+.form-section form .inputBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.form-section form .inputBox input,
+.form-section form textarea,
+.form-section form select {
+    border-radius: 1.3rem;
+    width: 100%;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    font-size: 1.4rem;
+    color: #333;
+    background: #f7f7f7;
+    text-transform: none;
+}
+.form-section form input:-webkit-autofill {
+    box-shadow: 0 0 0 30px #f7f7f7 inset;
+}
+
+.form-section form select {
+    width: 100%;
+}
+
+.form-section form textarea {
+    height: 15rem;
+    resize: none;
+    width: 100%;
+}
+
+.form-section .btn {
+    margin-top: 1.5rem;
+    padding: 0.8rem 1rem;
+    border-radius: 1.3rem;
+    font-size: 1.4rem;
+    color: white !important;
+    background: var(--dark-pink);
+    margin-bottom: 1.5rem;
+}
+form .eror-message{
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    color: var(--dark-pink)
+}
+form .msg a{
+    padding-bottom: 0.01rem;
+    border-bottom: 0.1rem solid var(--dark-pink);
+    color: var(--dark-pink);
+}

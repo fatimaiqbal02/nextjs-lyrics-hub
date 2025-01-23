@@ -1,0 +1,227 @@
+/* --------------------- left section --------------------------- */
+.menubar a {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-weight: 600;
+    font-size: 1.4rem;
+    padding: 1rem 1rem;
+    color: grey;
+    background: var(--bg-color);
+    border-radius: 1.3rem;
+}
+.menubar ul{
+    position: relative;
+}
+.menubar a .icon{
+    display: block;
+    position: relative;
+}
+.menubar a .title{
+    position: absolute;
+    bottom: 57px;
+    left: -15px;
+    display: block;
+    width: auto;
+    background: white;
+    color: var(--header-footer-bg);
+    box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.3rem;
+    padding: 0.5rem 1rem;
+    visibility: hidden;
+    opacity: 0;
+}
+.menubar a:hover .title{
+    visibility: visible;
+    opacity: 1;
+}
+
+.menubar a:hover {
+    color: white;
+    background: var(--dark-pink);
+}
+
+.menubar .active {
+    color: white;
+    background: var(--dark-pink);
+}
+
+.menubar li {
+    list-style: none;
+    margin-bottom: 0rem;
+}
+
+.menubar i {
+    font-size: 2rem;
+}
+
+.menubar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+@media screen and (min-width: 992px) {
+    .menubar ul {
+        display: block;
+    }
+    .menubar{
+        margin: 15rem 0rem;
+    }
+    .menubar ul{
+        justify-content: space-around;
+    }
+
+    .menubar li {
+        margin-bottom: 2rem;
+    }
+    .menubar a .title{
+        position: absolute;
+        bottom: 8px;
+        left:53px;
+    }
+}
+
+/* -----------x--------- left section ---------x---------------- */
+/* ------------------- Song Introduction --------------------- */
+.song-introduction,
+.song-artist-info,
+.song-reactions {
+    display: flex;
+    flex-wrap: wrap;
+}
+.song-introduction {
+    position: relative;
+    padding: 7rem 2rem;
+    border-radius: 1.3rem;
+}
+
+.song-introduction::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    z-index: 1;
+    border-radius: 1.3rem;
+}
+.background-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8; 
+    z-index: 2;
+}
+.song-artist-info{
+    background: var(--dark-pink);
+    color: white;
+    width: fit-content;
+    padding: 0.3rem 1rem;
+}
+.song-details {
+    z-index: 3;
+    margin: 1rem 0rem;
+}
+.song-title h1 {
+    color: white;
+    font-weight: 700;
+    font-size: 5rem;
+    letter-spacing: 0.1rem;
+}
+.song-rating{
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+.song-description{
+    font-size: 1.5rem;
+    color:white;
+    margin: 1rem 0rem;
+    max-width: 75vh;
+}
+.song-rating .average-rating{
+    font-size: 4rem;
+    font-weight: 500;
+    margin-right: 1rem;
+}
+.song-rating i {
+    font-size: 1.7rem !important;
+    color: orange;
+}
+.song-reactions div {
+    margin-top: 1rem;
+    background: rgba(255,255,255, 0.4) !important;
+    border-radius: 0.7rem !important;
+    color: white !important;
+}
+.song-reactions div i{
+    color: white !important;
+}
+.song-reactions .standard-icon{
+    margin-left: 0rem !important;
+    margin-right: 1rem !important;
+}
+.publishDate{
+    font-size: 1.4rem;
+    color:white;
+    margin: 0.5rem 0rem;
+}
+/* -------------------x------ Song Introduction -----x--------------- */
+/* -------------------------- Song Meanings ------------------------ */
+.song-meanings {
+    border-bottom: 0.1rem solid var(--bg-color);
+    padding: 3rem 0rem;
+    position: relative;
+}
+.song-meanings p {
+    margin-top: 1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+.side-buttons{
+    display: flex;
+    justify-content: flex-end;
+}
+.song-meanings .standard-icon .title, 
+.song-lyrics .standard-icon .title
+{
+    left: -90px;
+    z-index: 2;
+}
+.top-left-icon-lyrics .standard-icon .title{
+    left: -117px;
+    z-index: 2;
+}
+/* ---------------X---------- Song Meanings --------x--------------- */
+/* -------------------------- Song Lyrics -------------------------- */
+.song-lyrics {
+    border-bottom: 0.1rem solid var(--bg-color);
+    padding: 3rem 0rem;
+    position: relative;
+}
+.top-left-icon-lyrics{
+    display: inline-flex;
+    position: absolute;
+    right:0;
+    top:26px
+}
+.song-lyrics .line a{
+    color: var(--dark-pink) !important;
+    text-decoration: underline;
+    font-weight: bold;
+}
+/* ------------x------------- Song Lyrics ----------x-------------- */
+/* -----------x--------- mid section -----------x--------------- */
+.new-member-info{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 0.1rem solid var(--bg-color);
+    font-size: 1.4rem;
+}

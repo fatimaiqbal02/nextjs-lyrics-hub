@@ -1,0 +1,51 @@
+.comment-section {
+    border-bottom: 0.1rem solid var(--bg-color);
+    padding: 3rem 0rem;
+}
+
+form .box:focus {
+    border: 0.001rem solid var(--dark-pink) !important;
+}
+
+.comment-section form .inputBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.comment-section form .inputBox input,
+.comment-section form textarea,
+.comment-section form select {
+    border-radius: 0.7rem;
+    width: 49%;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    font-size: 1.4rem;
+    color: #747470;
+    background: #f7f7f7;
+    text-transform: none;
+}
+
+.comment-section form select {
+    width: 100%;
+    padding: 1rem 0.5rem !important;
+}
+
+.comment-section form textarea {
+    height: 15rem;
+    resize: none;
+    width: 100%;
+}
+
+.comment-section .btn {
+    margin-top: 1.5rem;
+    padding: 0.8rem 1rem;
+    border-radius: 1.3rem;
+    font-size: 1.4rem;
+    color: white !important;
+    background: var(--dark-pink);
+}
+
+.comment-section .standard-icon .title{
+    left:-15px;
+}

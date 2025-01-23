@@ -1,0 +1,114 @@
+.comment-list-section{
+    border-bottom: 0.1rem solid var(--bg-color);
+    padding: 3rem 0rem;
+}
+.comments-grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2em;
+}
+.comment-list-item-top{
+    margin-top: 1rem;
+    display: flex;
+    gap: 1.75rem;
+    align-items: center;
+    color: black;
+    padding-bottom: 1rem;
+    position: relative;
+}
+.comment-list-item-top .delete-icon{
+    display: none;
+    position: absolute;
+    right: 1rem;
+    color: grey;
+    font-size: 1.3rem;
+}
+.comment-list-item:hover .delete-icon{
+    display: block !important;
+}
+.comment-list-item-top:last-child{
+    padding-bottom: 0rem;
+    border-bottom: none;
+}
+.comment-list-item-top .user-initials{
+    border-radius: 1.3rem;
+    color: white;
+    background: var(--dark-pink);
+    height: 4rem;
+    width: 4rem;
+    font-weight: bold;
+    padding: 1.1rem;
+    text-align: center;
+    background: var(--dark-pink);
+}
+.comment-list-item-top .user-name{
+    font-weight: 600;
+    text-overflow: ellipsis;
+}
+.comment-list-item-top .user-location{
+    font-size: 1.4rem;
+    line-height: 1.25;
+    font-weight: 400;
+    color: gray;
+}
+.comment-list-item .comment-type-date{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.3rem;
+    line-height: 1.25;
+    font-weight: 400;
+    color: gray;
+}
+.comment-list-item .comment-type-date .typeofcomment{
+    margin-right: 0.5rem;
+}
+.comment-type-date .dot{
+    line-height: 1.25;
+    color: gray;
+    margin: 0rem 0.5rem;
+}
+.comment-list-item .comment-line{
+    margin-top: 0.5rem;
+    font-size: 1.4rem;
+}
+.reply-btn{
+    cursor: pointer;
+}
+.comment-btns .right-btns{
+    height: 2rem;
+    display: flex;
+    line-height: 1.2rem;
+}
+.comment-btns .right-btns div{
+    display: flex;
+    margin: 0rem 0.5rem;
+}
+.comment-btns .right-btns i{
+    font-size: 1.6rem;
+    margin: 0rem 0.5rem;
+    vertical-align: middle;
+}
+.comment-btns{
+    font-size: 1.3rem;
+    color: gray;
+    margin-top: 1.3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.view-reply-btn{
+    cursor: pointer;
+    font-size: 1.3rem;
+    color: gray;
+    margin-top: 1.3rem;
+}
+.view-area p{
+    margin-top: 0.5rem;
+    color: grey;
+}
+@media screen and (min-width: 635px){
+    .comments-grid{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 4em;
+    }
+}

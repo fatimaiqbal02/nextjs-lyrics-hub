@@ -1,0 +1,46 @@
+.totalSongsCount{
+    padding: 3rem 0rem;
+    font-size: 1.4rem;
+    z-index: -1;
+}
+.totalSongsCount .detail{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    font-size: 1.4rem;
+    line-height: 1.25;
+    font-weight: 400;
+}
+
+.totalSongsCount .detail .songs-count .count{
+    font-size: 2.8rem;
+    font-weight: bolder;
+    color: var(--dark-pink);
+    text-align: center;
+}
+.totalSongsCount .detail .songs-count .title{
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+.totalSongsCount .detail .songs-count{
+    display: flex;
+    flex-direction: row;
+    background: var(--bg-color);
+    padding: 1rem 2rem;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+.totalSongsCount .detail .songs-count i{
+    font-size: 3rem;
+    display: block;
+    width: auto;
+    margin: auto;
+}
+.totalSongsCount .detail .songs-count i{
+    font-size: 4rem;
+    display: block;
+    color: grey;
+    width: auto;
+    margin: auto;
+}

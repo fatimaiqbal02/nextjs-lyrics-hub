@@ -1,0 +1,65 @@
+/* -------------------------------- Homepage Container ---------------------------- */
+.homepage-container{
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  position: relative;
+}
+.homepage-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  z-index: 1;
+  border-radius: 1.3rem;
+}
+.background-pic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8; 
+  z-index: -2;
+}
+
+.container{
+  z-index: 3;
+  text-align: center;
+}
+.homepage-container h2{
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.homepage-container h1{
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+.homepage-container p{
+  font-size: 2rem;
+  text-transform: capitalize;
+  margin: 0rem 3rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.homepage-container .nav__search-form{
+  display: block;
+  margin: auto;
+}
+/* ------------x------------------ Homepage Container ---------------x-------- */

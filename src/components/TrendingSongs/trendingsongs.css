@@ -1,0 +1,11 @@
+.trending-songs{
+    padding-top: 1rem;
+    font-size: 1.4rem;
+    border-bottom: 0.1rem solid var(--bg-color);
+    padding-bottom: 3rem;
+}
+.trending-songs .songs-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    margin-left: 0.5rem;
+}
